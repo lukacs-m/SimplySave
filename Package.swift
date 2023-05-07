@@ -5,6 +5,12 @@ import PackageDescription
 
 let package = Package(
     name: "SimplySave",
+    platforms: [
+        .iOS(.v15),
+        .tvOS(.v15),
+        .macOS(.v10_15),
+        .watchOS(.v8)
+    ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -23,6 +29,8 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "SimplySaveTests",
-            dependencies: ["SimplySave"]),
+            dependencies: ["SimplySave"],
+            resources: [.process("Resources")]
+        ),
     ]
 )

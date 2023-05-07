@@ -1,0 +1,32 @@
+{
+  "configurations" : [
+    {
+      "id" : "542A94D9-A50C-4D36-AD81-64A2178810B9",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:",
+          "identifier" : "SimplySave",
+          "name" : "SimplySave"
+        }
+      ]
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "SimplySaveTests",
+        "name" : "SimplySaveTests"
+      }
+    }
+  ],
+  "version" : 1
+}
