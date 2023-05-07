@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum DirectoryEndpoint: Equatable {
+public enum DirectoryEndpoint: Equatable, Sendable {
     /// Only documents and other data that is user-generated, or that cannot otherwise be recreated by your application, should be stored in the <Application_Home>/Documents directory.
     /// Files in this directory are automatically backed up by iCloud. To disable this feature for a specific file, use the .doNotBackup(:in:) method.
     case documents
