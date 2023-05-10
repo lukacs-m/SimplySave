@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-public protocol SimpleSaving {
+public protocol SimpleSaving: Sendable {
     var totalCapacity: Int? { get }
     var availableCapacity: Int? { get }
     var availableCapacityForImportantUsage: Int? { get }
